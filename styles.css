@@ -1,41 +1,117 @@
-/* styles.css */
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Set body background and font styles */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-  }
-  
-  header, section, footer {
-    padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #f1f1f1;
+  color: #333;
+}
 
-  }
-  
-  h1, h2, h3 {
-    color: #333;
-  }
-  
-  h5 {
-    text-decoration: none;
-    color: #001aff;
-  }
-  
-  ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  footer ul li {
-    display: inline;
-    margin-right: 10px;
-    text-align: center;
-    color: lightslategray;
-    font-family: sans-serif;
-  }
+/* Set header styles */
+header {
+  background-color: #333;
+  padding: 20px;
+  text-align: center;
+  color: #fff;
+}
 
-  .img-me {
-    width:300px;
-    background-position: center;
-  }
+header h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
 
+header h5 {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+header img.img-me {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  margin-bottom: 20px;
+}
+
+header .img-me2 {
+  background-image: url("img/IMG_2.jpg");
+  background-size: cover;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  margin-bottom: 20px;
+}
+
+header h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Set section styles */
+section {
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+section h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+section ul {
+  list-style-type: none;
+}
+
+section ul li {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+/* Set footer styles */
+footer {
+  background-color: #333;
+  padding: 20px;
+  text-align: center;
+  color: #fff;
+}
+
+footer h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+footer ul {
+  list-style-type: none;
+}
+
+footer ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+footer ul li a button {
+  background-color: #fff;
+  border: none;
+  padding: 10px 20px;
+  color: #333;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+footer ul li a button:hover {
+  background-color: #eaeaea;
+}
   
   
