@@ -6,6 +6,9 @@
   <link href="styles.css" rel="stylesheet" type="text/css">
   <title>Welcome to My Portfolio</title>
   
+  <style>
+    /* Add your CSS styles here */
+  </style>
 </head>
 <body>
   <header>
@@ -15,12 +18,9 @@
     <div class="img-me2"></div>
     
     <h3>About Me</h3>
-    <p>Hello,My name is Chadrack Ndalamba.I am a young, professional hard-working individual who is always motivated to bring the best version of
-      myself.I am an aspiring Full-stack Web Developer and a quality-driven individual with first-rate teamwork and client or customer abilities.
-      Excellent communication, multitasking and deadline driven.</p>
+    <p>Hello, My name is Chadrack Ndalamba. I am a young, professional hard-working individual who is always motivated to bring the best version of myself. I am an aspiring Full-stack Web Developer and a quality-driven individual with first-rate teamwork and client or customer abilities. Excellent communication, multitasking and deadline-driven.</p>
   </header>
-        <style> </style><link rel="stylesheet" href="styles.css">
-</style>
+
   <section>
     <h2>Skills</h2>
     <ul>
@@ -39,14 +39,35 @@
 
   <footer>
     <h3>Contact Me</h3>
-    <li>Email Address: chadrackndalamba@gmail.com</li>
-    <li>Phone: 078-129-1867</li>
     <ul>      
-      <li><a href="https://www.linkedin.com/in/chadrack-ndalamba-442139137/"><button>Connect on LinkedIn</button></a></li>
-      <li><a href="https://www.instagram.com/chad.rsa/"><button>Follow on Instagram</button></a></li>
-      <li><a href="https://m.facebook.com/chad.rsa.1?eav=AfZlRObze_lwUMMnSLWU7flRLezKTZo7cy-ctzlhCE1xCwFK-rEHayIBugSLdCX9kjA&paipv=0"><button>Follow on Facebook</button></a></li>
+      <li>Email Address: chadrackndalamba@gmail.com</li>
+      <li>Phone: 078-129-1867</li>
+    </ul>
+    <ul>      
+      <li><a href="https://www.linkedin.com/in/chadrack-ndalamba-442139137/" target="_blank"><button>Connect on LinkedIn</button></a></li>
+      <li><a href="https://www.instagram.com/chad.rsa/" target="_blank"><button>Follow on Instagram</button></a></li>
+      <li><a href="https://m.facebook.com/chad.rsa.1?eav=AfZlRObze_lwUMMnSLWU7flRLezKTZo7cy-ctzlhCE1xCwFK-rEHayIBugSLdCX9kjA&paipv=0" target="_blank"><button>Follow on Facebook</button></a></li>
     </ul>
   </footer>
+
+  <script>
+    // Add interactive JavaScript features here
+    const linkedInBtn = document.querySelector('a[href="https://www.linkedin.com/in/chadrack-ndalamba-442139137/"]');
+    linkedInBtn.addEventListener('click', () => {
+      alert('You clicked "Connect on LinkedIn"');
+    });
+
+    const instagramBtn = document.querySelector('a[href="https://www.instagram.com/chad.rsa/"]');
+    instagramBtn.addEventListener('click', () => {
+      alert('You clicked "Follow on Instagram"');
+    });
+
+    const facebookBtn = document.querySelector('a[href="https://m.facebook.com/chad.rsa.1?eav=AfZlRObze_lwUMMnSLWU7flRLezKTZo7cy-ctzlhCE1xCwFK-rEHayIBugSLdCX9kjA&paipv=0"]');
+    facebookBtn.addEventListener('click', () => {
+      alert('You clicked "Follow on Facebook"');
+    });
+  </script>
 </body>
 </html>
+
 
