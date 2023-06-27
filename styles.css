@@ -30,25 +30,35 @@ header h5 {
   margin-bottom: 20px;
 }
 
-header img.img-me {
-  border-radius: 50%;
-  width: 200px;
-  height: 200px;
+header .img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-bottom: 20px;
 }
 
+header img.img-me,
 header .img-me2 {
-  background-image: url("img/IMG_2.jpg");
-  background-size: cover;
   border-radius: 50%;
   width: 200px;
   height: 200px;
-  margin-bottom: 20px;
+  margin: 0 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+header img.img-me:hover,
+header .img-me2:hover {
+  transform: rotate(360deg);
 }
 
 header h3 {
   font-size: 24px;
   margin-bottom: 10px;
+  transition: color 0.3s ease-in-out;
+}
+
+header h3:hover {
+  color: #ff9800;
 }
 
 header p {
@@ -75,6 +85,11 @@ section ul {
 section ul li {
   font-size: 16px;
   margin-bottom: 5px;
+  transition: color 0.3s ease-in-out;
+}
+
+section ul li:hover {
+  color: #ff9800;
 }
 
 /* Set footer styles */
@@ -88,6 +103,11 @@ footer {
 footer h3 {
   font-size: 24px;
   margin-bottom: 20px;
+  transition: color 0.3s ease-in-out;
+}
+
+footer h3:hover {
+  color: #ff9800;
 }
 
 footer ul {
@@ -100,18 +120,22 @@ footer ul li {
 }
 
 footer ul li a button {
-  background-color: #fff;
+  background-color: #007bff;
   border: none;
   padding: 10px 20px;
-  color: #333;
+  color: #fff;
   text-decoration: none;
   font-size: 16px;
   border-radius: 4px;
   cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 footer ul li a button:hover {
-  background-color: #eaeaea;
+  background-color: #0056b3;
 }
-  
+
+
+
   
