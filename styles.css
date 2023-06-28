@@ -112,6 +112,7 @@ footer h3:hover {
 
 footer ul {
   list-style-type: none;
+  margin-bottom: 10px; /* Add spacing between the footer elements */
 }
 
 footer ul li {
@@ -135,6 +136,9 @@ footer ul li a button {
 footer ul li a button:hover {
   background-color: #0056b3;
 }
+
+
+
 
 
 
