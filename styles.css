@@ -95,10 +95,10 @@ section ul li:hover {
 /* Set footer styles */
 footer {
   background-color: #333;
-  padding: 10px;
+  padding: 1px;
   text-align: center;
   color: #fff;
-  position: fixed;
+  position:sticky;
   bottom: 0;
   left: 0;
   width: 100%;
