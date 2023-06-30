@@ -66,8 +66,29 @@
     facebookBtn.addEventListener('click', () => {
       alert('You clicked "Follow on Facebook"');
     });
+
+    // Alert for landscape mode on mobile devices
+    window.addEventListener("orientationchange", function() {
+      const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+      const isPortrait = (window.innerHeight > window.innerWidth);
+      
+      if (isMobile && isPortrait) {
+        alert("Please rotate your device to landscape mode for the best viewing experience.");
+      }
+    });
+
+    // Additional alert for initial page load in portrait mode
+    window.addEventListener("load", function() {
+      const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+      const isPortrait = (window.innerHeight > window.innerWidth);
+      
+      if (isMobile && isPortrait) {
+        alert("Please rotate your device to landscape mode for the best viewing experience.");
+      }
+    });
   </script>
 </body>
 </html>
+
 
 
