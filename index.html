@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="styles.css" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   <title>Welcome to My Portfolio</title>
-  
+
   <style>
     /* Add your CSS styles here */
     header {
@@ -18,20 +19,59 @@
     .img-me {
       margin-bottom: 0;
     }
+
+    /* Navigation bar styles */
+    nav {
+      background-color: #858181;
+      color: #fff;
+      padding: 10px;
+    }
+
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content:left;
+    }
+
+    nav ul li {
+      margin: 0 10px;
+    }
+
+    nav ul li a {
+      color: #080808;
+      text-decoration:none;
+    }
+
+    /* Add styles for active navigation link */
+    nav ul li a.active {
+      font-weight: bold;
+    }
   </style>
 </head>
+
 <body>
+  <nav>
+    <ul>
+      <li><a href="#" class="active">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
   <header>
-    <h1>Chadrack Ndalamba</h1> 
+    <h1>Chadrack Ndalamba</h1>
     <h5>Aspiring Full-stack Web Developer</h5>
     <img class="img-me" src="img/wtcpc-1.jpeg" alt="">
-   
-    
-    <h3>About Me</h3>
+
+    <h3 id="about">About Me</h3>
     <p>Hello, my name is Chadrack Ndalamba. I am a young, professional, hardworking individual who is always motivated to show the best version of myself. I am an aspiring full-stack web developer and a quality-conscious person with top-notch teamwork and customer skills. I have excellent communication skills, very good at multitasking, and I adhere to deadlines.</p>
   </header>
 
-  <section>
+  <section id="skills">
     <h2>Skills</h2>
     <ul>
       <li><i class="fab fa-html5"></i> HTML</li>
@@ -42,18 +82,18 @@
     </ul>
   </section>
 
-  <section>
+  <section id="projects">
     <h2>Projects</h2>
     <p>I'm currently working on building my portfolio. Stay tuned for updates!</p>
   </section>
 
-  <footer>
+  <footer id="contact">
     <h3>Contact Me</h3>
-    <ul>      
+    <ul>
       <li>Email Address: chadrackndalamba@gmail.com</li>
       <li>Phone: 078-129-1867</li>
     </ul>
-    <ul>      
+    <ul>
       <li><a href="https://www.linkedin.com/in/chadrack-ndalamba-442139137/" target="_blank"><button><i class="fab fa-linkedin"></i> Connect on LinkedIn</button></a></li>
       <li><a href="https://www.instagram.com/chad.rsa/" target="_blank"><button><i class="fab fa-instagram"></i> Follow on Instagram</button></a></li>
       <li><a href="https://m.facebook.com/chad.rsa.1?eav=AfZlRObze_lwUMMnSLWU7flRLezKTZo7cy-ctzlhCE1xCwFK-rEHayIBugSLdCX9kjA&paipv=0" target="_blank"><button><i class="fab fa-facebook"></i> Follow on Facebook</button></a></li>
@@ -61,41 +101,26 @@
   </footer>
 
   <script>
-    // Add interactive JavaScript features here
-    const linkedInBtn = document.querySelector('a[href="https://www.linkedin.com/in/chadrack-ndalamba-442139137/"]');
-    linkedInBtn.addEventListener('click', () => {
-      alert('You clicked "Connect on LinkedIn"');
-    });
-
-    const instagramBtn = document.querySelector('a[href="https://www.instagram.com/chad.rsa/"]');
-    instagramBtn.addEventListener('click', () => {
-      alert('You clicked "Follow on Instagram"');
-    });
-
-    const facebookBtn = document.querySelector('a[href="https://m.facebook.com/chad.rsa.1?eav=AfZlRObze_lwUMMnSLWU7flRLezKTZo7cy-ctzlhCE1xCwFK-rEHayIBugSLdCX9kjA&paipv=0"]');
-    facebookBtn.addEventListener('click', () => {
-      alert('You clicked "Follow on Facebook"');
-    });
-
     // Alert for landscape mode on mobile devices
-    window.addEventListener("orientationchange", function() {
+    window.addEventListener("orientationchange", function () {
       const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
-      const isPortrait = (window.innerHeight > window.innerWidth);
-      
+      const isPortrait = window.innerHeight > window.innerWidth;
+
       if (isMobile && isPortrait) {
         alert("Please rotate your device to landscape mode for the best viewing experience.");
       }
     });
 
     // Additional alert for initial page load in portrait mode
-    window.addEventListener("load", function() {
+    window.addEventListener("load", function () {
       const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
-      const isPortrait = (window.innerHeight > window.innerWidth);
-      
+      const isPortrait = window.innerHeight > window.innerWidth;
+
       if (isMobile && isPortrait) {
         alert("Please rotate your device to landscape mode for the best viewing experience.");
       }
     });
   </script>
 </body>
+
 </html>
